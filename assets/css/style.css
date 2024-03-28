@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-.header, .navlist, .main, .aside, .footer{
+header, .navlist, .main, .aside, .footer{
   display: flex;
   flex-direction: row;
 }
@@ -28,14 +28,11 @@ header{
   width: 100%;
   height: 10%;
   background-color: #d6bda9;
-}
-
-.header{
   justify-content: space-between;
   align-items: center;
 }
 
-.header h1{
+header h1{
   font-size: 4rem;
   margin: 0 15px;
 }
@@ -47,18 +44,19 @@ header{
 }
 
 /* ---------- Main Section ---------- */
-.main-section h2{
+.main h2{
   font-size: 2rem;
 }
+
 .main{
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: space-evenly;
 }
 .main-section{
   padding: 2%;
 }
-.work1 h2{
+#prework{
   font-size: 4rem;
   color: black;
   text-shadow: 0 0 5px magenta;
@@ -73,7 +71,7 @@ header{
   background-image: url("https://images.unsplash.com/photo-1707391453776-c060f7ac1070?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   border: 5px solid #eac5b4;
-  /* opacity: 50%; */
+  opacity: 50%;
 }
 
 /* ---------- Footer ---------- */
