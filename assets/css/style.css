@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6{
 
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: black;
   background-color: #fff4ef;
 }
@@ -62,6 +62,40 @@ header h1{
   padding-right: 15px;
 }
 
+/* ---------- About Me Section ---------- */
+.main-section{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#about h2{
+  font-size: 4rem;
+  text-wrap: nowrap;
+  margin-right: 15px;
+}
+
+.paragraphs{
+  margin: 15px;
+  line-height: 1.5rem;
+}
+
+.paragraphs a{
+  background-color:#fde3c6;
+}
+
 /* ---------- Work Section ---------- */
 main h2{
   font-size: 4rem;
@@ -75,7 +109,7 @@ main{
 
 .work{
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #work1img h3{
@@ -92,19 +126,11 @@ main{
   align-items: center;
 }
 
-.work2{
+.work2, .work3{
   font-size: 2rem;
   color: black;
   text-shadow: 0 0 5px magenta;
   position: absolute;
-}
-
-.work3{
-  font-size: 2rem;
-  color: black;
-  text-shadow: 0 0 5px magenta;
-  position: absolute;
-
 }
 
 .imgs{
@@ -162,34 +188,8 @@ main{
   border: 5px solid #eac5b4;
 }
 
-/* ---------- About Me Section ---------- */
-.main-section{
-  display: flex;
-  flex-direction: column;
-}
-
-img{
-  margin: 10px;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-}
-
-#about{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#about h2{
-  font-size: 4rem;
-  text-wrap: nowrap;
-  margin-right: 15px;
-}
-
 /* ---------- Footer ---------- */
 footer{
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
   height: 4rem;
@@ -244,6 +244,8 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
   display: block;
 }
 
+/* ---------- Hovers ---------- */
+
 #work1img:hover{opacity: 50%;}
 #work2img:hover{opacity: 50%;}
 #work3img:hover{opacity: 50%;}
@@ -253,3 +255,93 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
 .dropdown:hover .socials{display: block;}
 .dropdown:hover .dropbtn{background-color: #fde3c6;}
 .dropdown:hover {background-color: #fde3c6;}
+
+/* ---------- Media Queries ---------- */
+@media screen and (max-width: 992px) {
+  #about{
+    flex-direction: column;
+  }
+
+  img{
+    width: 25%;
+    height: 25%;
+  }
+
+  .work{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #work1img, .work, .work1{
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .other-work h2{
+    display: none;
+  }
+
+  .imgs{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .other-work, #work2img, #work3img, .imgs{
+    width: 99%;
+    margin: 10px auto;
+    height: 300px;
+  }
+
+  #work1img h3, .work2, .work3{
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  header{
+    flex-direction: column;
+    height: 10%;
+  }
+
+  .navlist li a{
+    text-wrap: nowrap;
+    font-size: 1.25rem;
+  }
+
+  h1 a{
+    font-size: 100%;
+    text-wrap: nowrap;
+  }
+
+  #about h2, .work h2{
+    font-size: 2rem;
+  }
+
+  .paragraphs p{
+    font-size: 1rem;
+  }
+
+  .footer{
+    height: 20%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .footer h2{
+    font-size: 2rem;
+    padding: 5px;
+  }
+
+  body{
+    font-size: 1rem;
+  }
+
+  .dropdown, .socials, .github{
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+
