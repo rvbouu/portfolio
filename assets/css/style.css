@@ -243,7 +243,8 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
 #work2img:hover{opacity: 50%;}
 #work3img:hover{opacity: 50%;}
 .navlist li a:hover{background-color: #fde3c6}
-.github:hover{background-color: #fde3c6;}
+.github a:hover{background-color: #fde3c6;}
 .socials a:hover{background-color: #fde3c6;}
 .dropdown:hover .socials{display: block;}
 .dropdown:hover .dropbtn{background-color: #fde3c6;}
+.dropdown:hover {background-color: #fde3c6;}
