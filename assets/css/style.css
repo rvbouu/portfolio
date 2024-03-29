@@ -82,10 +82,9 @@ main{
 }
 
 .other-work{
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  margin-right: 130px;
-  gap: 15px;
 }
 
 .work2{
@@ -101,6 +100,17 @@ main{
   text-shadow: 0 0 5px magenta;
   position: absolute;
 
+}
+
+.imgs{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.other-work h2{
+  opacity: 0%;
+  cursor: default;
 }
 
 #work1img a, #work2img a, .work1 h3 a, .work2 a, #work3img a{
