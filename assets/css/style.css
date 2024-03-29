@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-header, .navlist, .main, .aside, .footer{
+header, .navlist, main, .work, .other-work, .aside, .footer{
   display: flex;
   flex-direction: row;
 }
@@ -26,10 +26,14 @@ main{
 header{
   top: 0;
   width: 100%;
-  height: 10%;
+  height: 5rem;
   background-color: #d6bda9;
   justify-content: space-between;
   align-items: center;
+}
+
+header nav, header nav .navlist li, header nav .navlist li a{
+  display: block;
 }
 
 header h1{
@@ -38,58 +42,140 @@ header h1{
 }
 
 .navlist{
+  list-style-type: none;
   gap: 20px;
   margin: 0 15px;
   font-size: 1.5rem;
 }
-
-/* ---------- Main Section ---------- */
-.main h2{
-  font-size: 2rem;
+.navlist li{
+  height: 5rem;
+  line-height: 5rem;
 }
 
-.main{
+.navlist li a{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ---------- Main Section ---------- */
+main h2{
+  font-size: 4rem;
+}
+
+main{
   flex-direction: column;
   justify-content: center;
   align-items: space-evenly;
 }
-.main-section{
-  padding: 2%;
-}
-#prework{
-  font-size: 4rem;
-  color: black;
-  text-shadow: 0 0 5px magenta;
-}
 
-.work1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1000px;
-  height: 500px;
-  background-image: url("https://images.unsplash.com/photo-1707391453776-c060f7ac1070?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  border: 5px solid #eac5b4;
-  opacity: 50%;
-}
-
-/* ---------- Footer ---------- */
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 5%;
-  background-color: #d6bda9;
-}
-
-.footer{
+.work{
   justify-content: space-around;
   align-items: center;
 }
 
-.footer h2{
+#work1img h3{
+  font-size: 3rem;
+  color: black;
+  text-shadow: 0 0 5px magenta;
+  display: flex;
+  position: absolute;
+}
+
+.other-work{
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 130px;
+  gap: 15px;
+}
+
+.work2{
   font-size: 2rem;
+  color: black;
+  text-shadow: 0 0 5px magenta;
+  position: absolute;
+}
+
+.work3{
+  font-size: 2rem;
+  color: black;
+  text-shadow: 0 0 5px magenta;
+  position: absolute;
+
+}
+
+#work1img a, #work2img a, .work1 h3 a, .work2 a, #work3img a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+#work1img{
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 600px;
+  background-image: url("../images/mountains.jpg");
+  background-size: cover;
+  border: 5px solid #eac5b4;
+}
+
+#work2img{
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/bridge.jpg");
+  background-size: cover;
+  border: 5px solid #eac5b4;
+}
+
+#work3img{
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/sand.jpg");
+  background-size: cover;
+  border: 5px solid #eac5b4;
+}
+
+
+/* ---------- Footer ---------- */
+footer{
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #d6bda9;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h2{
+  font-size: 2rem;
+}
+
+footer, .dropdown, .socials, .socials a, .github, .github a{
+  display: block;
+}
+
+.dropdown, .socials, .github{
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.socials a, .github a{
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #d6bda9;
 }
 
 /* ---------- Social Media Footer Button ---------- */
@@ -110,7 +196,7 @@ footer{
   background-color: #d6bda9;
   width: 100%;
   z-index: 1;
-  bottom: 100%;
+  bottom: 16rem;
 }
 
 .socials a, .github a, .navlist li a{
@@ -119,6 +205,9 @@ footer{
   display: block;
 }
 
+#work1img:hover{opacity: 50%;}
+#work2img:hover{opacity: 50%;}
+#work3img:hover{opacity: 50%;}
 .navlist li a:hover{background-color: #fde3c6}
 .github:hover{background-color: #fde3c6;}
 .socials a:hover{background-color: #fde3c6;}
