@@ -22,6 +22,11 @@ body{
 main{
   color: black;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
 /* ---------- Header ---------- */
 header{
   top: 0;
