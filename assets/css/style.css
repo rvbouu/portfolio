@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-header, .navlist, main, .work, .other-work, .aside, .footer{
+header, .navlist, main, .work, .other-work, .footer{
   display: flex;
   flex-direction: row;
 }
@@ -57,7 +57,7 @@ header h1{
   padding-right: 15px;
 }
 
-/* ---------- Main Section ---------- */
+/* ---------- Work Section ---------- */
 main h2{
   font-size: 4rem;
 }
@@ -147,6 +147,30 @@ main{
   border: 5px solid #eac5b4;
 }
 
+/* ---------- About Me Section ---------- */
+.main-section{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#about h2{
+  font-size: 4rem;
+  text-wrap: nowrap;
+  margin-right: 15px;
+}
 
 /* ---------- Footer ---------- */
 footer{
