@@ -115,7 +115,7 @@ main{
 #work1img h3{
   font-size: 3rem;
   color: black;
-  text-shadow: 0 0 5px magenta;
+  text-shadow: 0 0 5px turquoise;
   display: flex;
   position: absolute;
 }
@@ -129,7 +129,7 @@ main{
 .work2, .work3{
   font-size: 2rem;
   color: black;
-  text-shadow: 0 0 5px magenta;
+  text-shadow: 0 0 5px turquoise;
   position: absolute;
 }
 
@@ -257,7 +257,7 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
 .dropdown:hover {background-color: #fde3c6;}
 
 /* ---------- Media Queries ---------- */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   #about{
     flex-direction: column;
   }
@@ -297,7 +297,7 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   header{
     flex-direction: column;
     height: 10%;
@@ -341,6 +341,16 @@ footer, .dropdown, .socials, .socials a, .github, .github a{
   .dropdown, .socials, .github{
     height: 1.5rem;
     line-height: 1.5rem;
+  }
+
+  .socials{
+    bottom: 6rem;
+    border: 1px solid #fff4ef;
+  }
+
+  .socials a{
+    border-left: 1px solid #fff4ef;
+    border-right: 1px solid #fff4ef;
   }
 }
 
